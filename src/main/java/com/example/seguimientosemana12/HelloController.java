@@ -19,6 +19,9 @@ public class HelloController {
     private TextArea historialTextArea;
 
     @FXML
+    private TextField resultText;
+
+    @FXML
     private void onClick1(){
 
         operacion = operacion + " "+ "1";
@@ -84,11 +87,10 @@ public class HelloController {
 
 
 
+    @FXML
     private void onClickCalcular(){
-        String[] parts = operacion.split(" ");
-        for(int i = 0; i< parts.length;i++){
-            if (parts[i] =="+"){}
-        }
+        resultText.setText("operando...");
+
 
     }
 
